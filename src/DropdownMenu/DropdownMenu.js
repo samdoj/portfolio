@@ -34,19 +34,32 @@ const styles = theme => ({
 class DropdownMenu extends React.Component {
     state = {
         open: false,
+        mounted: false
     };
 
     handleToggle = () => {
-        this.setState(state => ({ open: !state.open }));
+        if(this.state.mounted) this.setState(state => ({ open: !state.open }));
     };
 
     handleClose = event => {
-        if (this.anchorEl.contains(event.target)) {
+        if (this.anchorEl.contains(event.target) || !this.state.mounted) {
             return;
         }
 
         this.setState({ open: false });
     };
+
+    componentDidMount()
+    {
+        this.setState({mounted: true})
+    }
+
+    shouldComponentUpdate(np,ns)
+    {
+        console.dir(np,ns)
+        if (!this.state.mounted && ns.mounted) return false;
+        return this.state.mounted
+    }
 
     render() {
         const { classes, items } = this.props;
@@ -55,8 +68,7 @@ class DropdownMenu extends React.Component {
             if(items) itemsMap =  items.map((item)  =>
         {
           return   <MenuItem style={{color: '#ffffcf', fontSize: '1.2vw', textAlign: 'center'}}
-                      key={item.name}
-                             onClick={() =>
+                      onClick={() =>
                       {
                           this.handleToggle();
                           item.func ? item.func() : console.warn("You must pass a menu item as {name:'foo',func:bar}");

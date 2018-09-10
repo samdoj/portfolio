@@ -9,12 +9,16 @@ import purple from "@material-ui/core/colors/purple";
 import Card from "../node_modules/@material-ui/core/Card/Card";
 import PDFViewer from 'mgr-pdf-viewer-react';
 import Image from "react-image-resizer";
+import Github from "./Github/Github";
 
 class App extends Component {
     constructor(props) {
         super(props);
+
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.toggleResume = this.toggleResume.bind(this);
+        this.embed = this.embed.bind(this)
+
         this.state = {showResume: false, mounted: false, width: 0, height: 0}
     }
 
@@ -36,11 +40,16 @@ class App extends Component {
         console.log(this.state.showResume);
         if (this.state.mounted) this.setState({showResume: bool})
     }
-
+    embed(componentName)
+    {
+        console.log("COMPONENT: "+ componentName)
+        this.setState({embeddedComponent: componentName})
+    }
     shouldComponentUpdate(newProps, newState) {
         const {width, height} = this.state;
         const {newWidth, newHeight} = this.state;
         if (newState.mounted !== this.state.mounted) return false;
+        if (newState.mounted && !this.state.mounted) return false;
         if (newState.showResume !== this.state.showResume) return true;
         if (width !== newWidth || height !== newHeight) return true;
         //console.dir(this.state)
@@ -99,13 +108,16 @@ class App extends Component {
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="About me"
                             icon={'person'}
-                            items={[{name:'Hobbies'}, {name:'Interests', func:()=>console.log('interests')}, {name:'Soft skills', func:()=>alert('func')}]}
+                            items={[{name:'Hobbies'}, {name:'Interests', func:()=>console.log('interests')}, {name:'Soft skills', func:console.log('Soft skills')}]}
                         /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="Projects"
-                            icon={'code'}/></Paper></div>
+                            icon={'code'}
+                            items={[{name:'Github', func:()=>this.embed('Github')}, {name:'Website', func:()=>console.log('Website')}, {name:'Android App', }, {name: 'Code samples'}]}
+                        /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="Games"
+                            items={[{name:'Tic-tac-toe'},{name: 'Battleship 3D'}, {name:'Serverless'}]}
                             icon={'gamepad'}/></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="Options"
@@ -151,6 +163,7 @@ class App extends Component {
                                         </Typography></div>}</Card>
                         </Grid>
                     </Grid>
+                    {this.state.embeddedComponent==='Github' ? <Github/> : null}
                 </div>
             </Fragment>
         </div>;
