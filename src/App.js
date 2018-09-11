@@ -10,6 +10,11 @@ import Card from "../node_modules/@material-ui/core/Card/Card";
 import PDFViewer from 'mgr-pdf-viewer-react';
 import Image from "react-image-resizer";
 import Github from "./Github/Github";
+import ExternalWebsite from "./ExternalWebsite/ExternalWebsite";
+import Android from "./Android/Android";
+import CodeSamples from "./CodeSamples/CodeSamples";
+import MenuBar from "./MenuBar/MenuBar";
+import Welcome from "./Welcome/Welcome";
 
 class App extends Component {
     constructor(props) {
@@ -19,7 +24,14 @@ class App extends Component {
         this.toggleResume = this.toggleResume.bind(this);
         this.embed = this.embed.bind(this)
 
-        this.state = {showResume: false, mounted: false, width: 0, height: 0}
+        this.state = {
+            showResume: false,
+            mounted: false,
+            width: 0,
+            height: 0,
+            embeddedComponentName:null,
+            embeddedComponent: null,
+            testComponent: <CodeSamples/>}
     }
 
     componentDidMount() {
@@ -38,12 +50,15 @@ class App extends Component {
 
     toggleResume(bool) {
         console.log(this.state.showResume);
-        if (this.state.mounted) this.setState({showResume: bool})
+        if (this.state.mounted) this.setState({showResume: bool, embeddedComponent:false})
     }
     embed(componentName)
     {
+        let componentMap = [];
+        componentMap["Silvermoonrise"]=<ExternalWebsite src={'http://www.silvermoonrise.com'}/>
+        componentMap["Android App"]=<Android/>
         console.log("COMPONENT: "+ componentName)
-        this.setState({embeddedComponent: componentName})
+        this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }
     shouldComponentUpdate(newProps, newState) {
         const {width, height} = this.state;
@@ -68,104 +83,31 @@ class App extends Component {
 
         return <div className="App">
             <link rel="stylesheet" href="index.css"/>
+            <div>
 
             <Fragment>
-
-                <Paper style={{
-                    width: '100vw !important',
-                    height: '100vh !important',
-                    backgroundColor: '#0a00fa',
-                    position: 'relative'
-                }}>
-                    <nav style={{
-                        flex: 7,
-                        flexDirection: 'column',
-                        backgroundColor: '#0a00fa',
-                        position: 'absolute',
-                        justifyItems: 'stretch',
-                        zIndex: 1100
-                    }}>
-                        <div className={'menu'} style={{display: 'inline-flex'}}><Paper>
-                            <DropdownMenu title="Home"
-                                          icon='home'
-                                          noDropdown
-                                          func={() => this.toggleResume(false)}
-
-                            /></Paper></div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}>
-                            <Paper elevation={1}><DropdownMenu title="Resume"
-                                                               noDropdown
-                                                               func={() => this.toggleResume(true)}
-                                                               icon={'list'}/>
-                            </Paper>
-                        </div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}>
-                            <Paper elevation={1}><DropdownMenu title="Blog"
-                                                               icon={'subject'}
-                            />
-                            </Paper>
-                        </div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
-                            title="About me"
-                            icon={'person'}
-                            items={[{name:'Hobbies'}, {name:'Interests', func:()=>console.log('interests')}, {name:'Soft skills', func:console.log('Soft skills')}]}
-                        /></Paper></div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
-                            title="Projects"
-                            icon={'code'}
-                            items={[{name:'Github', func:()=>this.embed('Github')}, {name:'Website', func:()=>console.log('Website')}, {name:'Android App', }, {name: 'Code samples'}]}
-                        /></Paper></div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
-                            title="Games"
-                            items={[{name:'Tic-tac-toe'},{name: 'Battleship 3D'}, {name:'Serverless'}]}
-                            icon={'gamepad'}/></Paper></div>
-                        <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
-                            title="Options"
-                            icon={'settings'}/></Paper></div>
+                <MenuBar boundFuncs = {[this.embed()]}/>
+            </Fragment></div>
+            <div>
+            <Fragment>
 
 
-                    </nav>
-                </Paper>
-                <div>
-                </div>
+
                 <div>
                     <Grid container alignContent='center' justify='center' alignItems='center'
                           style={{height: '100vh', overflowY: 'hidden', justifySelf: 'center'}}>
+                        {this.state.embeddedComponent ? this.state.embeddedComponent
+                            : this.state.testComponent ? this.state.testComponent :
                         <Grid item xl>
-                            <Card style={{
-                                alignSelf: 'center', display: 'flex',
-                                flexDirection: 'column',
-                                maxHeight: '80vh',
-                                width: 'auto',
-                                flexShrink: '10vw',
-                                backgroundColor: !this.state.showResume ? 'white' : 'lightsteelblue',
-                                padding: '.1vw'
-                            }}
-                                  raised={true}>
+                        <Welcome showResume={this.state.showResume}/>
 
-                                {this.state.showResume ?
-                                    <Paper elevation={-10} style={{backgroundColor: '#ffffffbd'}}><Image
-                                        src={require('./jdm_resume.png')}
-                                        height={this.state.width * .61 < 484 ? this.state.height * .8 : this.state.height / 11 * 81 / 11}
-                                        width={this.state.width * .61 < 484 ? this.state.width * .61 : 484}
-                                        style={{alignSelf: 'baseline', maxWidth: '618px', marginLeft: '0'}}>
-                                    </Image></Paper> :
-                                    <div>
-                                        <Typography
-                                            variant='display2'
-                                            align={'center'}
-                                            style={{color: 'goldenrod', backgroundColor: '#5717FF', margin: '1vw'}}>
-                                            Coming Soon
-                                        </Typography>
-                                        <Typography variant='body2' style={{margin: '2vw'}}>
-                                            I'm working hard on this awesome React site to show off my talents.<br/>
-                                            Links to my projects are currently working. More content is coming soon.
-                                        </Typography></div>}</Card>
-                        </Grid>
+}
+                        </Grid>}
                     </Grid>
                     {this.state.embeddedComponent==='Github' ? <Github/> : null}
-                </div>
+                </div>}
             </Fragment>
+            </div>
         </div>;
     }
 }

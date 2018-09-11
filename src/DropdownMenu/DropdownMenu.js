@@ -73,7 +73,7 @@ class DropdownMenu extends React.Component {
                           this.handleToggle();
                           item.func ? item.func() : console.warn("You must pass a menu item as {name:'foo',func:bar}");
                           }
-                      }>
+                      } key={item.name}>
               {item.name}</MenuItem>
 
 
