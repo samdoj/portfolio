@@ -14,7 +14,7 @@ export default class Welcome extends React.Component {
             maxHeight: '80vh',
             width: 'auto',
             flexShrink: '10vw',
-            backgroundColor: !this.state.showResume ? 'white' : 'lightsteelblue',
+            backgroundColor: !this.props.showResume ? 'white' : 'lightsteelblue',
             padding: '.1vw'
         }}
                                                       raised={true}>
@@ -22,10 +22,10 @@ export default class Welcome extends React.Component {
             {this.props.showResume ?
                 <Paper elevation={-10} style={{backgroundColor: '#ffffffbd'}}><Image
                     src={require('../jdm_resume.png')}
-                    height={this.state.width * .61 < 484 ? this.state.height * .8 : this.state.height / 11 * 81 / 11}
-                    width={this.state.width * .61 < 484 ? this.state.width * .61 : 484}
+                    height={this.props.width * .61 < 484 ? this.props.height * .8 : this.props.height / 11 * 81 / 11}
+                    width={this.props.width * .61 < 484 ? this.props.width * .61 : 484}
                     style={{alignSelf: 'baseline', maxWidth: '618px', marginLeft: '0'}}>
-                </Image></Paper> : this.state.embeddedComponentName === 'Github' ? <Github/> :
+                </Image></Paper> : this.props.embeddedComponentName === 'Github' ? <Github/> :
                     <div>
                         <Typography
                             variant='display2'
