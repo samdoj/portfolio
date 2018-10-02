@@ -56,7 +56,6 @@ class DropdownMenu extends React.Component {
 
     shouldComponentUpdate(np,ns)
     {
-        console.dir(np,ns)
         if (!this.state.mounted && ns.mounted) return false;
         return this.state.mounted
     }

@@ -18,6 +18,7 @@
     "react-github": "^2.1.2",
     "react-github-info": "^1.0.3",
     "react-image-mapper": "^0.0.7",
+    "react-loading": "^2.0.3",
     "react-material-ui": "^0.0.1",
     "react-pdf-js": "latest",
     "react-scripts": "1.1.5",

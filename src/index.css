@@ -32,3 +32,30 @@ img
   width: auto;
 
 }
+
+.code-card-row{
+justify-cntent: center;
+  justify-items: center;
+  flexDirection:row;
+  display:flex;
+}
+
+@media (max-width: 600px)
+{
+}
+
+img
+{
+  align-self: center;
+  display: flex;
+  margin:auto;
+  padding: 5vmax;
+  max-height: 500px;
+}
+
+.loading
+{
+  position: center;
+  transform: translate(48.5%,48.5%);
+}
+.hidden{display: none}

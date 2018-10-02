@@ -1,130 +1,179 @@
 import React from 'react'
-import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { dark } from 'react-syntax-highlighter/styles/prism';
-import Card from "@material-ui/core/Card/Card";
 import Grid from "@material-ui/core/Grid/Grid";
+import CodeCard from "../CodeCard/CodeCard";
+import Typography from "@material-ui/core/Typography/Typography";
+import Github from "../Github/Github";
+
+
 export default class CodeSamples extends React.Component
 {
+
     temperatureConverter(temperature, from, to)
-    {
+    {   //This code could be more compact, but at the expense of clarity.
         //You can pass either a number,
         // the temperature scale as a single character and the temperature scale to convert to
         //or you can call like this: temperatureConverter("32F","C"), which returns 0.
         // You can even type out the scale if you're so inclined!  That's why we have all the regexes.
-
-        const tempAndScale = new RegExp(/^\-{0,1}\d+(.\d+){0,1}[F,C,K, FAHRENHEIT,CELSIUS,KELVIN]+$/)
-        const tempOnly =  new RegExp(/^\-{0,1}\d+(.\d+){0,1}$/)
-        const scaleOnly = new RegExp(/^[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]$/)
-        const findScale = new RegExp(/[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]/)
-        const findTemp = new RegExp(/-{0,1}\d+(.\d+){0,1}/)
-        const indexer = ['F','C','K','FAHRENHEIT','CELSIUS','KELVIN']
+        if (![...arguments].length) return;
+        const tempAndScale = new RegExp(/^\-?\d+(.\d+){0,1}[F,C,K, FAHRENHEIT,CELSIUS,KELVIN]+$/);
+        const tempOnly =  new RegExp(/^-?\d+(.\d+){0,1}$/);
+        const scaleOnly = new RegExp(/^[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]$/);
+        const findScale = new RegExp(/[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]/);
+        const findTemp = new RegExp(/-?\d+(.\d+)?/);
+        const indexer = ['C','F','K',"CELSIUS","FAHRENHEIT","KELVIN"];
 
         //All our arrow functions.
         const fToC = (f)=> (f-32)*5/9;
-        const fToK = (f)=>fToC(f)-273;
+        const fToK = (f)=>cToK(fToC(f));
         const cToF = (c)=>9/5*c+32;
-        const cToK = (c)=>c-273;
-        const kToC = (k)=>k+273;
-        const kToF = (k)=>cToF(k+273);
+        const cToK = (c)=>c+273.15;
+        const kToC = (k)=>k-273.15;
+        const kToF = (k)=>cToF(k-273.15);
 
-        let index;
 
         //Make sure we only throw the error we want to throw.  Let's consider them all strings for now.
         temperature=temperature.toString().toUpperCase();
+
+        if(!to) to='';
+        if(!from) from='';
+
         from=from.toString().toUpperCase();
         to=to.toString().toUpperCase();
 
         //Throw any errors.
-        if(!tempAndScale.match(temperature) && !tempOnly.match(temperature)
-        || (tempOnly.match(temperature) && !(scaleOnly.match(to) && scaleOnly.match(from))))
+        if(!temperature.match(tempAndScale) && !temperature.match(tempOnly)
+        || (temperature.match(tempOnly) && !(to.match(scaleOnly) && from.match(scaleOnly))))
             throw new Error("You must pass a temperature in the form of a number," +
                 " or include the scale, but nothing else.  If you pass just a number," +
-                " you must pass to and from paramaters that contain just the scale.")
-        if (!from) throw new Error('There from parameter is always needed, but it is absent.');
+                " you must pass to and from paramaters that contain just the scale.");
+        if (!from) throw new Error('The from parameter is always needed, but it is absent.');
 
             if (to === from) return temperature; //We don't need to change anything.
 
             if (!to)
         {
             to = from;
-            from = findScale.match(temperature)[0];
-            temperature=findTemp.match(temperature)[0];
+            from = temperature.match(findScale)[0];
+            temperature=temperature.match(findTemp)[0];
         }
+            //It's certain to be here, so we don't need to look for falsiness.
+        // If it's not present, we already threw an error.
+            const toIndex = (indexer.indexOf(to)+1) % 3;
 
-            const toIndex = (indexer.indexOf(to)+1) % 3; //It's certain to be here, so we don't need to look for falsiness.
-            const fromIndex = (indexer.indexOf(from)+1) % 3; //Same with this one.  The % 3 is so we can use a switch statement.
+        //Same with this one.  The n % 3 is so we can use a switch statement.
+        //Since we set up the array to mirror single letters and names we can use this trick.
+        const fromIndex = (indexer.indexOf(from)+1) % 3;
+                    let t;
+
             switch (fromIndex) {
                 case 0 : //Kelvin
                 {
-                    let t;
                     if (toIndex===1)
                     {
-                        t = fToC(temperature);
+                        t = kToC(temperature);
+                        console.log('kToC')
                         }
                     else
                     {
-                        t = fToK(temperature);
+                        t = kToF(temperature);
+                    console.log('kToF')
                        }
-                       console.log(t)
+                       console.log(t);
+
                     return t;
                 }
-                break;
+                //Usually, a break statement should go here, but something is returned in every case.
                 case 1 : //Celsius
                 {
                     let t;
                     if (toIndex===0)
                     {
                         t = cToK(temperature);
+
+                        console.log('cToK')
                     }
                     else
                     {
                         t = cToF(temperature);
+
+                        console.log('cToF')
                     }
                     console.log(t);
                     return(t)
 
                 }
-                    break;
-
                 case 2 : //Fahrenheit
                 {
                     let t;
                     if (toIndex===0)
                     {
                         t = fToK(temperature);
+                        console.log('fToK')
                     }
                     else
                     {
                         t = fToC(temperature);
+                        console.log('fToC');
                     }
                     console.log(t);
                     return(t)
-
                 }
-                    break;
-
             }
+    }
 
+    fizzBuzz()
+{
+    //The FizzBuzz algorithm is as follows:  If a number is divisible by 3, print FIZZ.  If it's divisible
+    //by 5, print BUZZ.  Else print the number.
+    let i;
+    for (i = 1; i < 100; i++)
+    {let str = '';
+        if(i%3 === 0) str +='FIZZ';
+        if(i%5 === 0) str += 'BUZZ';
 
+        console.log(str ? str : i)}
+    }
+
+    consumeRestService() {
+        //This shows a new random picture of a cat every 20 seconds.  It uses fetch and promises.
+        //We route the request through a proxy server to allow CORS in the browser.  Loading can be a little slow.
+
+        window.interval = setInterval(() => fetch('https://cors-anywhere.herokuapp.com/https://aws.random.cat/meow', {
+
+                method: 'GET',
+                headers:
+                    {
+                        'Allow-Access-Control-Origin': '*',
+                        Accept: 'text/html'
+                    }
+            })
+                .then(response => response.json().
+                then((jsonResponse) => document.getElementById('modal').innerHTML = '<div style="margin: auto; height:100%; display: flex; justify-content: center; align-content:center">' +
+                    '<img src="'+jsonResponse.file+'" height= '+ window.innerHeight*.9+'/></div>')).then((jsonResponse)=>console.log(jsonResponse.file))
+                .catch(e => alert(e.message))
+            , 20000,0)
     }
 
 render()
 {
-    return(<Grid container style={
-        {}
-    }>
-        <Grid item
-        >
-        <Card style={{marginTop:'.5vmax', width:'30vw', display:'grid', height:'30vh'}}>
-        <SyntaxHighlighter language={'javascript'}>console.log('Hello world!');</SyntaxHighlighter>
-    </Card>
+    return(
+        <div>
+        <Typography variant={'headline'}>Text output from these functions will display both in a card and the browser console if you have it open.</Typography>
+        <Grid container={true}
+              spacing={8}
+              justify={'space-between'}
+              style={{
+              zIndex:800, height:'75vh',}}>
+
+            <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter} title='Temperature Converter'/></Grid>
+        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.fizzBuzz} title='FizzBuzz'/></Grid>
+        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.consumeRestService} title={'Cat pictures from REST'}/></Grid>
+            <Grid sm={12} item lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
+        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
+        <Grid item sm={12}  lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
         </Grid>
-        <Grid item>
-        <Card style={{margin:'.5vmax',top:'45vh', width:'30vw', display:'grid',gridRow:'2/1', height:'30vh'}}>
-            <SyntaxHighlighter language={'javascript'}>{this.temperatureConverter.toSource()}</SyntaxHighlighter>
-        </Card>
-        </Grid>
-    </Grid>)
+        </div>
+    )
 
 
 }

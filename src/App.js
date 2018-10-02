@@ -2,12 +2,6 @@ import React, {Component, Fragment} from 'react';
 import './App.css';
 import {Grid, Paper,} from '@material-ui/core'
 import DropdownMenu from "./DropdownMenu/DropdownMenu";
-import Typography from "../node_modules/@material-ui/core/Typography/Typography";
-import createMuiTheme from "../node_modules/@material-ui/core/styles/createMuiTheme";
-import green from "@material-ui/core/colors/green";
-import purple from "@material-ui/core/colors/purple";
-import Card from "../node_modules/@material-ui/core/Card/Card";
-import Image from "react-image-resizer";
 import Github from "./Github/Github";
 import ExternalWebsite from "./ExternalWebsite/ExternalWebsite";
 import Android from "./Android/Android";
@@ -20,7 +14,7 @@ class App extends Component {
 
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.toggleResume = this.toggleResume.bind(this);
-        this.embed = this.embed.bind(this)
+        this.embed = this.embed.bind(this);
 
         this.state = {
             showResume: false,
@@ -53,11 +47,11 @@ class App extends Component {
     embed(componentName)
     {
         let componentMap = [];
-        componentMap["Silvermoonrise"]=<ExternalWebsite src={'http://www.silvermoonrise.com'}/>
-        componentMap["Android App"]=<Android/>
-        componentMap["Github"]=<Github/>
-        componentMap["CodeSamples"]=<CodeSamples/>
-        console.log("COMPONENT: "+ componentName)
+        componentMap["Silvermoonrise"]=<ExternalWebsite src={'http://www.silvermoonrise.com'}/>;
+        componentMap["Android App"]=<Android/>;
+        componentMap["Github"]=<Github/>;
+        componentMap["CodeSamples"]=<CodeSamples/>;
+        console.log("COMPONENT: "+ componentName);
         this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }
     shouldComponentUpdate(newProps, newState) {
@@ -74,21 +68,15 @@ class App extends Component {
 
     render() {
         const {embed, toggleResume} = this;
-        const theme = createMuiTheme({
-            palette: {
-                primary: {main: purple[500]}, // Purple and green play nicely together.
-                secondary: {main: '#11cb5f'}, // This is just green.A700 as hex.
-            },
-        });
 
-        return <div className="App">
+
+        return <div className="App" style={{overflow:'visible'}}>
             <link rel="stylesheet" href="index.css"/>
-            <div>
-
+            <Grid container direction={'column'} style={{height:'100vh'}}>
+            <Grid item xl={12} xs={12} style={{overflow:'visible'}}>
             <Fragment>
                 <Paper style={{
                     width: '100vw !important',
-                    height: '100vh !important',
                     backgroundColor: '#0a00fa',
                     position: 'relative'
                 }}>
@@ -97,8 +85,7 @@ class App extends Component {
                         flexDirection: 'column',
                         backgroundColor: '#0a00fa',
                         position: 'absolute',
-                        justifyItems: 'stretch',
-                        zIndex: 1100
+                           zIndex: 1100
                     }}>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper>
                             <DropdownMenu title="Home"
@@ -149,17 +136,15 @@ class App extends Component {
                 </Paper>
 
 
-            </Fragment></div>
-            <div>
-            <Fragment>
-
-
+            </Fragment></Grid>
+            </Grid>
+                <div>
 
                 <div>
-                    <Grid container alignContent='center' justify='center' alignItems='center'
-                          style={{height: '100vh', overflowY: 'hidden', justifySelf: 'center'}}>
+                    <Grid className={'main-container'} container justify='center'
+                          style={{height: '100vh', overflowY: 'hidden', justifySelf: 'center', overflow:'scroll', position:'absolute',top:'10vh'}}>
                         {this.state.embeddedComponent ? this.state.embeddedComponent
-                            : this.state.testComponents ? this.state.testComponent :
+                            : this.state.testComponent ? this.state.testComponent :
                         <Grid item xl>
                             {this.state.embeddedComponent ? this.state.embeddedComponent :
                                 <Welcome
@@ -173,7 +158,6 @@ class App extends Component {
                     </Grid>
                     {this.state.embeddedComponent==='Github' ? <Github/> : null}
                 </div>
-            </Fragment>
             </div>
         </div>;
     }
