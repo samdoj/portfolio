@@ -3,6 +3,8 @@ import Grid from "@material-ui/core/Grid/Grid";
 import CodeCard from "../CodeCard/CodeCard";
 import Typography from "@material-ui/core/Typography/Typography";
 import Github from "../Github/Github";
+import TemperatureConverter from "../TemperatureConverter/TemperatureConverter";
+import FizzBuzz from "../FizzBuzz/FizzBuzz";
 
 
 export default class CodeSamples extends React.Component
@@ -165,8 +167,8 @@ render()
               style={{
               zIndex:800, height:'75vh',}}>
 
-            <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter} title='Temperature Converter'/></Grid>
-        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.fizzBuzz} title='FizzBuzz'/></Grid>
+            <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter} title='Temperature Converter' component={()=><TemperatureConverter/>}/></Grid>
+        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.fizzBuzz} component = {()=><FizzBuzz/>} title='FizzBuzz'/></Grid>
         <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.consumeRestService} title={'Cat pictures from REST'}/></Grid>
             <Grid sm={12} item lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
         <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>

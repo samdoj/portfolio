@@ -7,8 +7,27 @@ import ExternalWebsite from "./ExternalWebsite/ExternalWebsite";
 import Android from "./Android/Android";
 import CodeSamples from "./CodeSamples/CodeSamples";
 import Welcome from "./Welcome/Welcome";
+window.lines=[]
+
+const preservedConsoleLog = console.log;
+
+//overriding console.log function
+console.log = function() {
+
+    //we can't just call to `preservedConsoleLog` function,
+    //that will throw an error (TypeError: Illegal invocation)
+    //because we need the function to be inside the
+    //scope of the `console` object so we going to use the
+    //`apply` function
+    preservedConsoleLog.apply(console, arguments);
+
+    //and lastly, my addition to the `console.log` function
+   [...arguments].forEach(arg => window.lines.push({content: arg, style:'normal'}))
+     }
+
 
 class App extends Component {
+
     constructor(props) {
         super(props);
 
@@ -51,7 +70,6 @@ class App extends Component {
         componentMap["Android App"]=<Android/>;
         componentMap["Github"]=<Github/>;
         componentMap["CodeSamples"]=<CodeSamples/>;
-        console.log("COMPONENT: "+ componentName);
         this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }
     shouldComponentUpdate(newProps, newState) {

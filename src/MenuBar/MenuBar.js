@@ -11,8 +11,6 @@ export default class MenuBar extends React.Component
     {
         const {boundFuncs} = this.props;
 
-        console.dir('boundFuncs: ', boundFuncs);
-        console.log(boundFuncs['embed'].toSource());
         return( <Paper style={{
                 width: '100vw !important',
                 height: '100vh !important',
