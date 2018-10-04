@@ -11,7 +11,6 @@ window.lines=[]
 
 const preservedConsoleLog = console.log;
 
-//overriding console.log function
 console.log = function() {
 
     //we can't just call to `preservedConsoleLog` function,
@@ -130,7 +129,7 @@ class App extends Component {
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="About me"
                             icon={'person'}
-                            items={[{name:'Hobbies'}, {name:'Interests', func:()=>console.log('interests')}, {name:'Soft skills', func:console.log('Soft skills')}]}
+                            items={[{name:'Hobbies'}, {name:'Interests'}, {name:'Soft skills', func:()=>console.log('Soft skills')}]}
                             
                         /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu

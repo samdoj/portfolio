@@ -21,7 +21,7 @@ export default class Console extends  React.Component
     {
             const {lines} =this.state;
         return(
-            <div style={this.props.style ? this.props.style : {width:'100%', height:'100%', backgroundColor:'white'}}>
+            <div style={this.props.style ? this.props.style : {width:'100%', height:'100%', backgroundColor:'white', overflow:'scroll'}}>
                 {lines}
             </div>
         )

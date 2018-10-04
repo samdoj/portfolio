@@ -116,7 +116,7 @@ export const fizzBuzz = () =>
     //The FizzBuzz algorithm is as follows:  If a number is divisible by 3, print FIZZ.  If it's divisible
     //by 5, print BUZZ.  Else print the number.
     let i;
-    for (i = 1; i < 100; i++)
+    for (i = 1; i < 101; i++)
     {let str = '';
         if(i%3 === 0) str +='FIZZ';
         if(i%5 === 0) str += 'BUZZ';
