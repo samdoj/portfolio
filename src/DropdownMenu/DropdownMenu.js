@@ -17,10 +17,10 @@ const styles = theme => ({
     paper: {
         marginRight: theme.spacing.unit * 2,
         fontSize: "2.25vw",
-        backgroundColor:'blue',
+        backgroundColor:'green',
         palette :
             {
-                backgroundColor: 'blue'
+                backgroundColor: 'green'
             }
     },
     button:
@@ -67,6 +67,7 @@ class DropdownMenu extends React.Component {
             if(items) itemsMap =  items.map((item)  =>
         {
           return   <MenuItem style={{color: '#ffffcf', fontSize: '1.2vw', textAlign: 'center'}}
+                             className={item.disabled ? 'menu-disabled' : 'menu-normal'}
                       onClick={() =>
                       {
                           this.handleToggle();
@@ -83,6 +84,7 @@ class DropdownMenu extends React.Component {
                 <div style={{width:'14vw'}}>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
                     <Button
+                        className={this.props.disabled ? "menu-disabled" : "menu-normal"}
                          style={{ fontSize:"1.75vw", backgroundColor:'#0a00fa', color:'#ffefff' }}
                         buttonRef={node => {
                             this.anchorEl = node;

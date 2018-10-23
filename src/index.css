@@ -44,7 +44,7 @@ justify-cntent: center;
 {
 }
 
-img
+.cats img
 {
   align-self: center;
   display: flex;
@@ -59,3 +59,23 @@ img
   transform: translate(48.5%,48.5%);
 }
 .hidden{display: none}
+
+.menu-disabled
+{
+  color:#abababaa !important;
+  cursor: not-allowed !important;
+}
+
+.push-up
+{
+  transform: translateY(-50vh);
+
+  }
+
+.hobbies img
+{
+  width: auto;
+  height: 20vh;
+  margin:2vmax;
+  border: 2px black solid;
+  }

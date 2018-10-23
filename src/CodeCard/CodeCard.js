@@ -39,7 +39,7 @@ export default class CodeCard extends React.Component{
         const maxWidth = this.state.expanded ? '50vw' : '50%';
         const {title, func, code} = this.props;
 
-        return( this.state.showModal ? <ModalDisplay func={()=>func.call()} close={()=>this.toggleModal(false)} component={this.props.component ? this.props.component : undefined}/>: <Card className={'code-card'} style={{ maxWidth:'100vw', width, height, left, top, position, zIndex, overflow,}}>
+        return( this.state.showModal ? <ModalDisplay func={this.props.noRun ? null : ()=>func.call()} close={()=>this.toggleModal(false)} component={this.props.component ? this.props.component : undefined}/>: <Card className={'code-card'} style={{ maxWidth:'100vw', width, height, left, top, position, zIndex, overflow,}}>
             <CardHeader title={title}/>
             <CardActions style={{maxWidth:'100vw', height:'100px', overflow:'hidden'}}>
                 <Button id='expand' onClick={()=>{
@@ -47,7 +47,7 @@ export default class CodeCard extends React.Component{
                 const buffer = !expanded;
                 this.setState({expanded:buffer})}}
                      style={{display:'inline-flex', width:'50%', maxWidth, overflowX:'hidden', minHeight:'10%'}}>{this.state.expanded ? 'Shrink' : 'Expand'}</Button>
-                <Button onClick={func  ? ()=>{this.toggleModal(true) ; func.call()} : ()=>console.warn('No function bound to run.')} style={{display:'inline-flex', width:'50%', maxWidth}}>Run</Button>
+                <Button onClick={func  ? ()=>{this.toggleModal(true) ; if(!this.props.noRun) func.call()} : ()=>console.warn('No function bound to run.')} style={{display:'inline-flex', width:'50%', maxWidth}}>Run</Button>
             </CardActions>
             <SyntaxHighlighter language={'javascript'}  wrapLines={true} customStyle={{overflowX:'visible', overflowWrap:'normal'}}>
                 {code ? code :

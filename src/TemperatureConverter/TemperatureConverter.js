@@ -1,10 +1,9 @@
 import React from 'react'
 import TextField from "@material-ui/core/TextField/TextField";
-import Grid from "@material-ui/core/Grid/Grid";
 import Button from "@material-ui/core/Button/Button";
 import * as csFuncs from '../codeSampleFunctions';
-import Typography from "@material-ui/core/Typography/Typography";
 import Jello from 'react-reveal/Jello';
+import FormLabel from "@material-ui/core/FormLabel/FormLabel";
 
 
 export default class TemperatureConverter extends React.Component{
@@ -24,61 +23,48 @@ export default class TemperatureConverter extends React.Component{
 render ()
 {
     const {temp, toScale, fromScale} = this.state;
-    return <div style={{width: '100vw', height: '90vh', flex: 10, display: 'flex', flexDirection:'column', background: 'white'}}>
-        <Grid container={true}>
-        <Grid item xs={12}>
+    return <div style={{backgroundColor:'white', height:'100vh', width:'100vw'}}>
+    <form noValidate autoComplete={'off'}>
+
             <TextField
-            id="filled-name"
+            id="form-temp"
             label="Temperature (scale can be included):"
             value={this.state.temp}
             onChange={this.handleChange('temp')}
-            margin="normal"
-            variant="filled"
-            style={{flex:1, display:'flex',margin:'1vmax'}}
-        />
-        </Grid>
-            <Grid item xs={12}>
+            autoFocus={false}
+            fullWidth={true}
+            />
         <TextField
-    id="filled-name"
+    id="form-from"
     label="Convert from:"
+    fullWidth={true}
+    autoFocus={false}
     value={this.state.fromScale}
     onChange={this.handleChange('fromScale')}
-    margin="normal"
-    variant="filled"
 
-    style={{flex:1, display:'flex', margin:'1vmax'}}
         />
-            </Grid>
-        <Grid item xs={12}>
             <TextField
-    id="filled-name"
+    id="form-to"
     label="Convert to: "
     value={this.state.toScale}
+    autoFocus={false}
+    fullWidth={true }
     onChange={this.handleChange('toScale')}
-    margin="normal"
-    variant="filled"
-
-    style={{flex:1, display:'flex',margin:'1vmax'}}
-            /></Grid>
-            <Grid item xs={6}>
+            />
                 <Button onClick={()=>{
-                    window.lines=[];
-
-                    try {
+                   try {
                         const t = fromScale ? csFuncs.temperatureConverter(temp, fromScale, toScale) : csFuncs.temperatureConverter(temp,toScale);
                         const text = `${temp} ${fromScale && toScale ?
                             fromScale + ' = ' + t + toScale :
                             toScale ? ' = ' + t + toScale :
-                                ' = ' + t + fromScale}`
+                                ' = ' + t + fromScale}`;
                         this.setState({line: text})
                     } catch (e) {
                         alert(e)
                     }
                 }}>Convert</Button>
-            </Grid>
-            <Grid item xs={6}> <Jello ssrFadein ={true}><h4>{this.state.line}</h4></Jello></Grid>
-        </Grid>
-    </div>
+            <FormLabel> <Jello ssrFadein ={true}><h4>{this.state.line}</h4></Jello></FormLabel>
+    </form></div>
 }
 
 }

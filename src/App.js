@@ -7,7 +7,11 @@ import ExternalWebsite from "./ExternalWebsite/ExternalWebsite";
 import Android from "./Android/Android";
 import CodeSamples from "./CodeSamples/CodeSamples";
 import Welcome from "./Welcome/Welcome";
-window.lines=[]
+import Contact from "./Contact/Contact";
+import TicTacToe from "./TicTacToe/TicTacToe";
+import Hobbies from "./Hobbies/Hobbies";
+
+window.lines=[];
 
 const preservedConsoleLog = console.log;
 
@@ -22,8 +26,9 @@ console.log = function() {
 
     //and lastly, my addition to the `console.log` function
    [...arguments].forEach(arg => window.lines.push({content: arg, style:'normal'}))
-     }
+     };
 
+//todo: Add Interests to About Me
 
 class App extends Component {
 
@@ -41,7 +46,7 @@ class App extends Component {
             height: 0,
             embeddedComponentName:null,
             embeddedComponent: null,
-            testComponent: <CodeSamples/>}
+            testComponent: null}
     }
 
     componentDidMount() {
@@ -69,6 +74,9 @@ class App extends Component {
         componentMap["Android App"]=<Android/>;
         componentMap["Github"]=<Github/>;
         componentMap["CodeSamples"]=<CodeSamples/>;
+        componentMap["Contact"]=<Contact/>
+        componentMap["Tic-Tac-Toe"]=<TicTacToe/>
+
         this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }
     shouldComponentUpdate(newProps, newState) {
@@ -78,8 +86,7 @@ class App extends Component {
         if (newState.mounted && !this.state.mounted) return false;
         if (newState.showResume !== this.state.showResume) return true;
         if (width !== newWidth || height !== newHeight) return true;
-        //console.dir(this.state)
-        console.dir(newState)
+
 
     }
 
@@ -122,6 +129,7 @@ class App extends Component {
                         </div>
                         <div className={'menu'} style={{display: 'inline-flex'}}>
                             <Paper elevation={1}><DropdownMenu title="Blog"
+                                                               disabled={true}
                                                                icon={'subject'}
                             />
                             </Paper>
@@ -129,7 +137,7 @@ class App extends Component {
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="About me"
                             icon={'person'}
-                            items={[{name:'Hobbies'}, {name:'Interests'}, {name:'Soft skills', func:()=>console.log('Soft skills')}]}
+                            items={[{name:'Hobbies'}, {name:'Contact me', func:()=>embed('Contact')}]}
                             
                         /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
@@ -140,11 +148,12 @@ class App extends Component {
                         /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="Games"
-                            items={[{name:'Tic-tac-toe'},{name: 'Battleship 3D'}, {name:'Serverless'}]}
+                            items={[{name:'Tic-tac-toe', func: ()=> embed('Tic-Tac-Toe')},{name: 'Battleship 3D', disabled:true}, {name:'Serverless',disabled:true}]}
                             
                             icon={'gamepad'}/></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="Options"
+                            disabled={true}
                             
                             icon={'settings'}/></Paper></div>
 
@@ -158,8 +167,8 @@ class App extends Component {
                 <div>
 
                 <div>
-                    <Grid className={'main-container'} container justify='center'
-                          style={{height: '100vh', overflowY: 'hidden', justifySelf: 'center', overflow:'scroll', position:'absolute',top:'10vh'}}>
+                    <Grid className={'main-container'} container justify='center' alignItems={'center'}
+                         >
                         {this.state.embeddedComponent ? this.state.embeddedComponent
                             : this.state.testComponent ? this.state.testComponent :
                         <Grid item xl>
@@ -169,7 +178,7 @@ class App extends Component {
                                     width={this.state.width}
                                     height={this.state.height}
                                     embeddedComponent={this.state.embeddedComponent}/>
-                            }
+                             }
 
                         </Grid>}
                     </Grid>

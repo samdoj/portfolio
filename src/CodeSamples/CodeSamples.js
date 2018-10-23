@@ -2,181 +2,63 @@ import React from 'react'
 import Grid from "@material-ui/core/Grid/Grid";
 import CodeCard from "../CodeCard/CodeCard";
 import Typography from "@material-ui/core/Typography/Typography";
-import Github from "../Github/Github";
 import TemperatureConverter from "../TemperatureConverter/TemperatureConverter";
 import FizzBuzz from "../FizzBuzz/FizzBuzz";
+import * as cs from '../codeSampleFunctions'
+import QuickSort from "../QuickSort/QuickSort";
+import BinarySearch from "../BinarySearch/BinarySearch";
+import Card from "@material-ui/core/Card/Card";
 
+export default class CodeSamples extends React.Component {
 
-export default class CodeSamples extends React.Component
+constructor(props)
 {
-
-    temperatureConverter(temperature, from, to)
-    {   //This code could be more compact, but at the expense of clarity.
-        //You can pass either a number,
-        // the temperature scale as a single character and the temperature scale to convert to
-        //or you can call like this: temperatureConverter("32F","C"), which returns 0.
-        // You can even type out the scale if you're so inclined!  That's why we have all the regexes.
-        if (![...arguments].length) return;
-        const tempAndScale = new RegExp(/^\-?\d+(.\d+){0,1}[F,C,K, FAHRENHEIT,CELSIUS,KELVIN]+$/);
-        const tempOnly =  new RegExp(/^-?\d+(.\d+){0,1}$/);
-        const scaleOnly = new RegExp(/^[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]$/);
-        const findScale = new RegExp(/[F,C,K, FAHRENHEIT,CELCIUS,KELVIN]/);
-        const findTemp = new RegExp(/-?\d+(.\d+)?/);
-        const indexer = ['C','F','K',"CELSIUS","FAHRENHEIT","KELVIN"];
-
-        //All our arrow functions.
-        const fToC = (f)=> (f-32)*5/9;
-        const fToK = (f)=>cToK(fToC(f));
-        const cToF = (c)=>9/5*c+32;
-        const cToK = (c)=>c+273.15;
-        const kToC = (k)=>k-273.15;
-        const kToF = (k)=>cToF(k-273.15);
-
-
-        //Make sure we only throw the error we want to throw.  Let's consider them all strings for now.
-        temperature=temperature.toString().toUpperCase();
-
-        if(!to) to='';
-        if(!from) from='';
-
-        from=from.toString().toUpperCase();
-        to=to.toString().toUpperCase();
-
-        //Throw any errors.
-        if(!temperature.match(tempAndScale) && !temperature.match(tempOnly)
-        || (temperature.match(tempOnly) && !(to.match(scaleOnly) && from.match(scaleOnly))))
-            throw new Error("You must pass a temperature in the form of a number," +
-                " or include the scale, but nothing else.  If you pass just a number," +
-                " you must pass to and from paramaters that contain just the scale.");
-        if (!from) throw new Error('The from parameter is always needed, but it is absent.');
-
-            if (to === from) return temperature; //We don't need to change anything.
-
-            if (!to)
-        {
-            to = from;
-            from = temperature.match(findScale)[0];
-            temperature=temperature.match(findTemp)[0];
-        }
-            //It's certain to be here, so we don't need to look for falsiness.
-        // If it's not present, we already threw an error.
-            const toIndex = (indexer.indexOf(to)+1) % 3;
-
-        //Same with this one.  The n % 3 is so we can use a switch statement.
-        //Since we set up the array to mirror single letters and names we can use this trick.
-        const fromIndex = (indexer.indexOf(from)+1) % 3;
-                    let t;
-
-            switch (fromIndex) {
-                case 0 : //Kelvin
-                {
-                    if (toIndex===1)
-                    {
-                        t = kToC(temperature);
-                        console.log('kToC')
-                        }
-                    else
-                    {
-                        t = kToF(temperature);
-                    console.log('kToF')
-                       }
-                       console.log(t);
-
-                    return t;
-                }
-                //Usually, a break statement should go here, but something is returned in every case.
-                case 1 : //Celsius
-                {
-                    let t;
-                    if (toIndex===0)
-                    {
-                        t = cToK(temperature);
-
-                        console.log('cToK')
-                    }
-                    else
-                    {
-                        t = cToF(temperature);
-
-                        console.log('cToF')
-                    }
-                    console.log(t);
-                    return(t)
-
-                }
-                case 2 : //Fahrenheit
-                {
-                    let t;
-                    if (toIndex===0)
-                    {
-                        t = fToK(temperature);
-                        console.log('fToK')
-                    }
-                    else
-                    {
-                        t = fToC(temperature);
-                        console.log('fToC');
-                    }
-                    console.log(t);
-                    return(t)
-                }
-            }
-    }
-
-    fizzBuzz()
-{
-    //The FizzBuzz algorithm is as follows:  If a number is divisible by 3, print FIZZ.  If it's divisible
-    //by 5, print BUZZ.  Else print the number.
-    let i;
-    for (i = 1; i < 101; i++)
-    {let str = '';
-        if(i%3 === 0) str +='FIZZ';
-        if(i%5 === 0) str += 'BUZZ';
-
-        console.log(str ? str : i)}
-    }
-
-    consumeRestService() {
-        //This shows a new random picture of a cat every 20 seconds.  It uses fetch and promises.
-        //We route the request through a proxy server to allow CORS in the browser.  Loading can be a little slow.
-
-        window.interval = setInterval(() => fetch('https://cors-anywhere.herokuapp.com/https://aws.random.cat/meow', {
-
-                method: 'GET',
-                headers:
-                    {
-                        'Allow-Access-Control-Origin': '*',
-                        Accept: 'text/html'
-                    }
-            })
-                .then(response => response.json().
-                then((jsonResponse) => document.getElementById('modal').innerHTML = '<div style="margin: auto; height:100%; display: flex; justify-content: center; align-content:center">' +
-                    '<img src="'+jsonResponse.file+'" height= '+ window.innerHeight*.9+'/></div>')).then((jsonResponse)=>console.log(jsonResponse.file))
-                .catch(e => alert(e.message))
-            , 20000,0)
-    }
-
-render()
-{
-    return(
-        <div>
-        <Typography variant={'headline'}>Text output from these functions will display both in a card and the browser console if you have it open.</Typography>
-        <Grid container={true}
-              spacing={8}
-              justify={'space-between'}
-              style={{
-              zIndex:800, height:'75vh',}}>
-
-            <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter} title='Temperature Converter' component={()=><TemperatureConverter/>}/></Grid>
-        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.fizzBuzz} component = {()=><FizzBuzz/>} title='FizzBuzz'/></Grid>
-        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.consumeRestService} title={'Cat pictures from REST'}/></Grid>
-            <Grid sm={12} item lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
-        <Grid item sm={12} lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
-        <Grid item sm={12}  lg={4} xl={3}><CodeCard func={this.temperatureConverter}/></Grid>
-        </Grid>
-        </div>
-    )
-
-
+    super(props)
+    this.state={width:window.innerWidth}
+    this.updateWindowDimensions=this.updateWindowDimensions.bind(this)
 }
+
+    updateWindowDimensions() {
+        this.setState({width: window.innerWidth, height: window.innerHeight});
+    }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    render() {
+        return (
+            <div style={{position:'absolute',height:'100vh',width:this.state.width>600 ? '100vw' : '80vw', overflow:'scroll', top:'15vh',left:this.state.width>600?0:'10vw', alignContent:'center', alignItems:'center'}}>
+                <Typography variant={'headline'}>Text output from these functions will display both in a card and the
+                    browser console if you have it open.</Typography>
+                <Grid container={true}
+                      spacing={8}
+                      justify={this.state.width > 600 ? 'center' : "space-around"}
+                      >
+
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.temperatureConverter}
+                                                               title='Temperature Converter'
+                                                               noRun={true}
+                                                               component={() => <TemperatureConverter/>}/></Grid>
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.fizzBuzz} component={() => <FizzBuzz/>}
+                                                               title='FizzBuzz'/></Grid>
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.consumeRestService}
+                                                               title={'Cat pictures from REST'}/></Grid>
+                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={cs.quickSort} title="Quick Sort"
+                                                               component={() => <QuickSort/>}/></Grid>
+                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={cs.binarySearch}  title="Binary Search"
+
+                                                               component={() => <BinarySearch/>} noRun={true}/></Grid>
+                    <Grid item sm={6} item lg={4} xl={3}><Card style={{minHeight:'25vh', width:this.state.width < 600 ? '80vw' : null,alignItems:'center', display:'flex', justifyContent:'center'}}><a href='mailto:joedmasonsd%40gmail.com?subject=Code%20sample%20suggestion'>Suggest a code sample</a></Card></Grid>
+                </Grid>
+
+            </div>
+        )
+
+
+    }
 }

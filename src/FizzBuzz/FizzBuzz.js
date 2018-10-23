@@ -13,14 +13,14 @@ export default class FizzBuzz extends React.Component
      }
     componentWillUnmount()
     {
-        window.lines=undefined;
+        window.lines=[]
     }
 
     render ()
     {
+window.lines=[];
         const {lines}=window;
-
-fizzBuzz()
+fizzBuzz();
         return(
 
             <div style={this.props.style ? this.props.style : {width:'100vw', height:'100vh', backgroundColor:'white'}}>

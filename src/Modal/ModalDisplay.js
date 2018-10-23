@@ -5,6 +5,7 @@ import ReactLoading from 'react-loading';
 export default class ModalDisplay extends React.Component {
     render() {
         const childComponent = this.props.component ?<this.props.component {...this.props}/> : <div id={'modal'}
+                                                                                                    className={'cats'}
                                                                                                      style={{
                                                                                                          background: 'white',
                                                                                                          width: '100%',
@@ -27,7 +28,7 @@ export default class ModalDisplay extends React.Component {
                 <div style={{width:'100vw', position:'absolute', left:0, justifySelf:'center', alignSelf:'center', textAlign:'center',}}>Loading from REST service.  This could take awhile.  Please be patient.</div>
             </div>
             </div></div>;
-        return (<Modal open={true} onRendered={() => this.props.func.call()}
+        return (<Modal open={true} onRendered={() => this.props.func ? this.props.func.call() : null}
                        style={{overflow: 'scroll', alignContent: 'center', alignItems: 'center'}}>
             <div><Button onClick={() => this.props.close.call()} style={{backgroundColor: 'white'}}>Close</Button>
                 {childComponent}
