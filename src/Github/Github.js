@@ -6,7 +6,7 @@ class Github extends React.Component
     render()
     {
         return(
-            <Profile username={'samdoj'}/>
+            <Profile username={'samdoj'} className="push-up"/>
                 )
     }
 }
