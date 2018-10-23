@@ -76,6 +76,7 @@ class App extends Component {
         componentMap["CodeSamples"]=<CodeSamples/>;
         componentMap["Contact"]=<Contact/>
         componentMap["Tic-Tac-Toe"]=<TicTacToe/>
+        componentMap["Hobbies"]=<Hobbies/>
 
         this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }
