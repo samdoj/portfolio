@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="Added QuickSort to code samples.">
-      <change afterPath="$PROJECT_DIR$/src/BinarySearch/BinarySearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contact/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hobbies/Hobbies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuickSort/QuickSort.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Montana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Skytree_10MB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/illuminasia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/kelowna.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/monkey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/sunset.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/wave.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodeCard/CodeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeCard/CodeCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Console/Console.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Console.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FizzBuzz/FizzBuzz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FizzBuzz/FizzBuzz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuBar/MenuBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modal/ModalDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal/ModalDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codeSampleFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeSampleFunctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +39,10 @@
         <counts>
           <entry key="css" value="911" />
           <entry key="html" value="3" />
-          <entry key="js" value="37756" />
+          <entry key="js" value="37801" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="462" />
+          <entry key="txt" value="507" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -77,7 +51,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="44" />
+          <entry key="JavaScript" value="47" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -91,7 +65,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="1" />
           <entry key="jpg" value="5" />
-          <entry key="js" value="43" />
+          <entry key="js" value="46" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="tmp" value="1" />
@@ -103,8 +77,8 @@
           <entry key="CSS" value="911" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="37755" />
-          <entry key="PLAIN_TEXT" value="462" />
+          <entry key="JavaScript" value="37800" />
+          <entry key="PLAIN_TEXT" value="507" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -116,10 +90,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="156">
+              <caret line="140" column="76" selection-start-line="140" selection-start-column="76" selection-end-line="140" selection-end-column="76" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -165,6 +148,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="83" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -258,10 +253,10 @@
         <option value="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" />
         <option value="$PROJECT_DIR$/src/TicTacToe.js" />
         <option value="$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js" />
-        <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/Hobbies/Hobbies.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
       </list>
     </option>
   </component>
@@ -357,6 +352,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="CodeCard" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="portfolio-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Modal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TicTacToe" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -434,7 +441,7 @@
       <workItem from="1539632153452" duration="707000" />
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
-      <workItem from="1540319393172" duration="5614000" />
+      <workItem from="1540319393172" duration="6211000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -492,17 +499,31 @@
       <option name="project" value="LOCAL" />
       <updated>1538638702329</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Production build">
+      <created>1540329190396</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540329190396</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Production build hobbies bug fixed">
+      <created>1540335858283</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1540335858283</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316061000" />
+    <option name="totallyTimeSpent" value="316658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32249466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -516,7 +537,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5161074" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" weight="0.3243243" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32885906" />
@@ -591,7 +612,9 @@
     <MESSAGE value="Created virtual console." />
     <MESSAGE value="TemperatureConverter and FizzBuzz components working." />
     <MESSAGE value="Added QuickSort to code samples." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added QuickSort to code samples." />
+    <MESSAGE value="Production build" />
+    <MESSAGE value="Production build hobbies bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Production build hobbies bug fixed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -687,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -702,13 +718,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuBar/MenuBar.js" />
-    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="165" selection-start-line="6" selection-start-column="165" selection-end-line="6" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -753,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="116" selection-start-line="7" selection-start-column="116" selection-end-line="7" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -792,13 +794,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/monkey.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Hobbies/Hobbies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -811,11 +806,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="156">
+          <caret line="140" column="76" selection-start-line="140" selection-start-column="76" selection-end-line="140" selection-end-column="76" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="7" column="116" selection-start-line="7" selection-start-column="116" selection-end-line="7" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
         </state>
       </provider>
     </entry>

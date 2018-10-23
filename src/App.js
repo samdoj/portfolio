@@ -138,7 +138,7 @@ class App extends Component {
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
                             title="About me"
                             icon={'person'}
-                            items={[{name:'Hobbies'}, {name:'Contact me', func:()=>embed('Contact')}]}
+                            items={[{name:'Hobbies', func:()=>embed('Hobbies')}, {name:'Contact me', func:()=>embed('Contact')}]}
                             
                         /></Paper></div>
                         <div className={'menu'} style={{display: 'inline-flex'}}><Paper elevation={1}><DropdownMenu
