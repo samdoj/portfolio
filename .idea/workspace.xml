@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Github/Github.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Github/Github.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +38,10 @@
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="37816" />
+          <entry key="js" value="37821" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="528" />
+          <entry key="txt" value="567" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -77,8 +76,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="37815" />
-          <entry key="PLAIN_TEXT" value="528" />
+          <entry key="JavaScript" value="37820" />
+          <entry key="PLAIN_TEXT" value="567" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -89,11 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -152,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -263,9 +262,9 @@
         <option value="$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js" />
         <option value="$PROJECT_DIR$/src/Hobbies/Hobbies.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
         <option value="$PROJECT_DIR$/src/Github/Github.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
       </list>
     </option>
   </component>
@@ -456,7 +455,7 @@
       <workItem from="1539632153452" duration="707000" />
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
-      <workItem from="1540319393172" duration="8366000" />
+      <workItem from="1540319393172" duration="11586000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -542,17 +541,31 @@
       <option name="project" value="LOCAL" />
       <updated>1540337111485</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed some styling.">
+      <created>1540338374741</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1540338374741</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Made tictactoe https">
+      <created>1540433882760</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1540433882760</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318813000" />
+    <option name="totallyTimeSpent" value="322033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32249466" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -566,7 +579,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5161074" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" weight="0.3243243" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32885906" />
@@ -644,7 +657,9 @@
     <MESSAGE value="Production build" />
     <MESSAGE value="Production build hobbies bug fixed" />
     <MESSAGE value="added CORS workaround" />
-    <option name="LAST_COMMIT_MESSAGE" value="added CORS workaround" />
+    <MESSAGE value="Fixed some styling." />
+    <MESSAGE value="Made tictactoe https" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made tictactoe https" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -854,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Github/Github.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -872,6 +880,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
         </state>
       </provider>
     </entry>
