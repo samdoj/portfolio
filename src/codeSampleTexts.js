@@ -32,5 +32,41 @@ export const consumeRestService = 'function consumeRestService(){ //This shows a
     '            .catch(e => alert(e.message))\n' +
     '        , 20000, 0)\n' +
     '}';
-export const quickSort ='function quickSort()\n {\r\\n    let data = [];\\r\\n    \\/\\/Generate an array of 100 random numbers.  A bubble sort would work just fine for an array of this size.\\r\\n    \\/\\/This is usually unnecessary in practice as most languages with sort functions automatically apply the best\\r\\n    \\/\\/algorithm.  That said, the efficiency of quick sort is excellent.  It is O(n log n) as opposed to say O(n^2) for\\r\\n    \\/\\/bubble sort.  However, this data set is a species of data sets that represent the worst case scenario for this algorithm.\\r\\n    for (let i = 0; i < 1000; i++) {\\r\\n        data.push(Math.trunc(Math.random() * 100));\\r\\n    }\\r\\n\\r\\n    console.log(\\\'[\\\' + data.toString() + \\\']\\\');\\r\\n    let iterations = 0;\\r\\n\\r\\n    function quickSortRecursion(data) {\\r\\n        if (data.length < 2) return data;\\r\\n        const pivot = data.pop();\\r\\n        let left = [];\\r\\n        let right = [];\\r\\n        let newArray = [];\\r\\n\\r\\n        for (let i = 0; i < data.length; i++) {\\r\\n            let datum = data[i];\\r\\n            if (datum <= pivot) left.push(datum);\\r\\n            else right.push(datum);\\r\\n        }\\r\\n        iterations++;\\r\\n        newArray = newArray.concat(quickSortRecursion(left), pivot, quickSortRecursion(right));\\r\\n\\r\\n\\r\\n        return newArray;\\r\\n\\r\\n\\r\\n    }\\r\\n\\r\\n    console.log(\\\'[\\\' + quickSortRecursion(data).toString() + \\\']\\\');\\r\\n    console.log(\\\'Sorted in \\\' + iterations + \\\' iterations.\\\')\\r\\n}';
+export const quickSort ='function quickSort(){\n' +
+    '    let data = [];\n' +
+    '    //Generate an array of 100 random numbers.  A bubble sort would work just fine for an array of this size.\n' +
+    '    //This is usually unnecessary in practice as most languages with sort functions automatically apply the best\n' +
+    '    //algorithm.  That said, the efficiency of quick sort is excellent.  It is O(n log n) as opposed to say O(n^2) for\n' +
+    '    //bubble sort.  However, this data set is a species of data sets that represent the worst case scenario for this algorithm.\n' +
+    '    for (let i = 0; i < 1000; i++) {\n' +
+    '        data.push(Math.trunc(Math.random() * 100));\n' +
+    '    }\n' +
+    '\n' +
+    '    console.log(\'[\' + data.toString() + \']\');\n' +
+    '    let iterations = 0;\n' +
+    '\n' +
+    '    function quickSortRecursion(data) {\n' +
+    '        if (data.length < 2) return data;\n' +
+    '        const pivot = data.pop();\n' +
+    '        let left = [];\n' +
+    '        let right = [];\n' +
+    '        let newArray = [];\n' +
+    '\n' +
+    '        for (let i = 0; i < data.length; i++) {\n' +
+    '            let datum = data[i];\n' +
+    '            if (datum <= pivot) left.push(datum);\n' +
+    '            else right.push(datum);\n' +
+    '        }\n' +
+    '        iterations++;\n' +
+    '        newArray = newArray.concat(quickSortRecursion(left), pivot, quickSortRecursion(right));\n' +
+    '\n' +
+    '\n' +
+    '        return newArray;\n' +
+    '\n' +
+    '\n' +
+    '    }\n' +
+    '\n' +
+    '    console.log(\'[\' + quickSortRecursion(data).toString() + \']\');\n' +
+    '    console.log(\'Sorted in \' + iterations + \' iterations.\')\n' +
+    '}'
 export const binarySearch = 'function binarySearch(arr, target){\\r\\n    target=parseInt(target)\\r\\n    debugger\r\n    let low = 0;\r\n    let high = arr.length - 1;\r\n    let index = 0;\r\n    while (low < high) {\r\n        if(high-1===index) return -1\r\n        index = Math.trunc((low + high) \/ 2);\r\n        if (arr[index] === target) return index;\r\n        if (arr[index] > target) {\r\n            high = index;\r\n        }\r\n        else low = index;\r\n    }\r\n    return -1\r\n}';
