@@ -47,8 +47,10 @@ constructor(props)
                                                                noRun={true}
                                                                component={() => <TemperatureConverter/>}/></Grid>
                     <Grid item sm={6} lg={4} xl={3}><CodeCard func={codeFunctions.fizzBuzz} component={() => <FizzBuzz/>}
-                                                              title='FizzBuzz'/> code={codeText.fizzBuzz}</Grid>
+                                                              code={codeText.fizzBuzz}
+                                                              title='FizzBuzz'/> </Grid>
                     <Grid item sm={6} lg={4} xl={3}><CodeCard func={codeFunctions.consumeRestService}
+                                                              code = {codeText.consumeRestService}
                                                                title={'Cat pictures from REST'}/></Grid>
                     <Grid sm={6} item lg={4} xl={3}><CodeCard func={codeFunctions.quickSort} code={codeText.quickSort} title="Quick Sort"
                                                               component={() => <QuickSort/>}/></Grid>

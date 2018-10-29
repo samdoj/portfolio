@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codeSampleTexts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" afterDir="false" />
     </list>
@@ -39,10 +38,10 @@
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="38548" />
+          <entry key="js" value="38589" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="597" />
+          <entry key="txt" value="776" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -77,8 +76,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="38547" />
-          <entry key="PLAIN_TEXT" value="597" />
+          <entry key="JavaScript" value="38588" />
+          <entry key="PLAIN_TEXT" value="776" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -101,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+            <state relative-caret-position="136">
+              <caret line="8" column="170" selection-start-line="8" selection-start-column="170" selection-end-line="8" selection-end-column="170" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#762#778#0" expanded="true" />
@@ -114,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="323">
+              <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -159,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+            <state relative-caret-position="272">
+              <caret line="31" column="73" lean-forward="true" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -280,7 +279,6 @@
         <option value="$PROJECT_DIR$/src/MenuBar/MenuBar.js" />
         <option value="$PROJECT_DIR$/src/FizzBuzz/FizzBuzz.js" />
         <option value="$PROJECT_DIR$/src/Console/Console.js" />
-        <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
         <option value="$PROJECT_DIR$/src/QuickSort/QuickSort.js" />
         <option value="$PROJECT_DIR$/src/codeSampleFunctions.js" />
         <option value="$PROJECT_DIR$/src/BinarySearch/BinarySearch.js" />
@@ -297,6 +295,7 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
         <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
+        <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
         <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
       </list>
     </option>
@@ -495,7 +494,7 @@
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
       <workItem from="1540319393172" duration="12236000" />
-      <workItem from="1540840975980" duration="1220000" />
+      <workItem from="1540840975980" duration="2701000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -602,11 +601,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540437754903</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Made CodeCards display escaped function code instead of using .toSource() to avoid uglification and minification issues.">
+      <created>1540842262789</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1540842262792</updated>
+    </task>
+    <task id="LOCAL-00017" summary="&#10;test">
+      <created>1540842490735</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1540842490735</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323903000" />
+    <option name="totallyTimeSpent" value="325384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -707,7 +720,9 @@
     <MESSAGE value="Fixed some styling." />
     <MESSAGE value="Made tictactoe https" />
     <MESSAGE value="Put tic-tac-toe on Netlify" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put tic-tac-toe on Netlify" />
+    <MESSAGE value="Made CodeCards display escaped function code instead of using .toSource() to avoid uglification and minification issues." />
+    <MESSAGE value="&#10;test" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -924,10 +939,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="73" lean-forward="true" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+        <state relative-caret-position="136">
+          <caret line="8" column="170" selection-start-line="8" selection-start-column="170" selection-end-line="8" selection-end-column="170" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#762#778#0" expanded="true" />
@@ -935,17 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="323">
+          <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
