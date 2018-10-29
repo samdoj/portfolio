@@ -9,6 +9,7 @@ import * as codeText from '../codeSampleTexts';
 import QuickSort from "../QuickSort/QuickSort";
 import BinarySearch from "../BinarySearch/BinarySearch";
 import Card from "@material-ui/core/Card/Card";
+import {isMobile} from 'react-device-detect';
 
 export default class CodeSamples extends React.Component {
 
@@ -43,8 +44,9 @@ export default class CodeSamples extends React.Component {
                 alignContent: 'center',
                 alignItems: 'center'
             }}>
-                <Typography variant={'headline'}>Text output from these functions will display both in a card and the
-                    browser console if you have it open.</Typography>
+                <Typography
+                    variant={'headline'}>{isMobile ? null : 'Text output from these functions will display both in a card and the'+
+                    'browser console if you have it open.'}</Typography>
                 <Grid container={true}
                       spacing={8}
                       justify={this.state.width > 600 ? 'center' : "space-around"}
