@@ -74,9 +74,9 @@ class App extends Component {
         componentMap["Android App"]=<Android/>;
         componentMap["Github"]=<Github/>;
         componentMap["CodeSamples"]=<CodeSamples/>;
-        componentMap["Contact"]=<Contact/>
-        componentMap["Tic-Tac-Toe"]=<TicTacToe/>
-        componentMap["Hobbies"]=<Hobbies/>
+        componentMap["Contact"]=<Contact/>;
+        componentMap["Tic-Tac-Toe"]=<TicTacToe/>;
+        componentMap["Hobbies"]=<Hobbies/>;
 
         this.setState({embeddedComponentName: componentName, embeddedComponent: componentMap[componentName]})
     }

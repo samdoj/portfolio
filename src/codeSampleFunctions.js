@@ -174,13 +174,13 @@ export const quickSort = () => {
 };
 
 export const binarySearch = (arr, target) => {
-    target=parseInt(target)
-    debugger
+    target=parseInt(target);
+    debugger;
     let low = 0;
     let high = arr.length - 1;
     let index = 0;
     while (low < high) {
-        if(high-1===index) return -1
+        if(high-1===index) return -1;
         index = Math.trunc((low + high) / 2);
         if (arr[index] === target) return index;
         if (arr[index] > target) {

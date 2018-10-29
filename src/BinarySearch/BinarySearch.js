@@ -11,11 +11,11 @@ export default class BinarySearch extends React.Component
     {
 
         super(props);
-        let arr = []
+        let arr = [];
         for (let i = 0; i < 100 ; i++) {
-            let val = Math.trunc(Math.random()*199)+1
+            let val = Math.trunc(Math.random()*199)+1;
             while(arr.indexOf(val)+1)
-                val = Math.trunc(Math.random()*199)+1
+                val = Math.trunc(Math.random()*199)+1;
             arr[i] = val
         }
         arr=arr.sort((a,b)=>parseInt(a)-parseInt(b));
@@ -24,11 +24,11 @@ export default class BinarySearch extends React.Component
 
     randomArray()
     {
-        let arr = []
+        let arr = [];
         for (let i = 0; i < 100 ; i++) {
-            let val = Math.trunc(Math.random()*199)+1
+            let val = Math.trunc(Math.random()*199)+1;
             while(arr.indexOf(val)+1)
-                val = Math.trunc(Math.random()*199)+1
+                val = Math.trunc(Math.random()*199)+1;
             arr[i] = val
         }
         arr=arr.sort((a,b)=>parseInt(a)-parseInt(b));
