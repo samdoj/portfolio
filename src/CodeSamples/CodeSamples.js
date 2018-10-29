@@ -4,7 +4,8 @@ import CodeCard from "../CodeCard/CodeCard";
 import Typography from "@material-ui/core/Typography/Typography";
 import TemperatureConverter from "../TemperatureConverter/TemperatureConverter";
 import FizzBuzz from "../FizzBuzz/FizzBuzz";
-import * as cs from '../codeSampleFunctions'
+import * as codeFunctions from '../codeSampleFunctions'
+import * as codeText from '../codeSampleTexts'
 import QuickSort from "../QuickSort/QuickSort";
 import BinarySearch from "../BinarySearch/BinarySearch";
 import Card from "@material-ui/core/Card/Card";
@@ -40,19 +41,20 @@ constructor(props)
                       justify={this.state.width > 600 ? 'center' : "space-around"}
                       >
 
-                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.temperatureConverter}
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={codeFunctions.temperatureConverter}
+                                                              code={codeText.temperatureConverter}
                                                                title='Temperature Converter'
                                                                noRun={true}
                                                                component={() => <TemperatureConverter/>}/></Grid>
-                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.fizzBuzz} component={() => <FizzBuzz/>}
-                                                               title='FizzBuzz'/></Grid>
-                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={cs.consumeRestService}
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={codeFunctions.fizzBuzz} component={() => <FizzBuzz/>}
+                                                              title='FizzBuzz'/> code={codeText.fizzBuzz}</Grid>
+                    <Grid item sm={6} lg={4} xl={3}><CodeCard func={codeFunctions.consumeRestService}
                                                                title={'Cat pictures from REST'}/></Grid>
-                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={cs.quickSort} title="Quick Sort"
-                                                               component={() => <QuickSort/>}/></Grid>
-                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={cs.binarySearch}  title="Binary Search"
+                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={codeFunctions.quickSort} code={codeText.quickSort} title="Quick Sort"
+                                                              component={() => <QuickSort/>}/></Grid>
+                    <Grid sm={6} item lg={4} xl={3}><CodeCard func={codeFunctions.binarySearch} code = {codeText.binarySearch} title="Binary Search"
 
-                                                               component={() => <BinarySearch/>} noRun={true}/></Grid>
+                                                              component={() => <BinarySearch/>} noRun={true}/></Grid>
                     <Grid item sm={6} item lg={4} xl={3}><Card style={{minHeight:'25vh', width:this.state.width < 600 ? '80vw' : null,alignItems:'center', display:'flex', justifyContent:'center'}}><a href='mailto:joedmasonsd%40gmail.com?subject=Code%20sample%20suggestion'>Suggest a code sample</a></Card></Grid>
                 </Grid>
 

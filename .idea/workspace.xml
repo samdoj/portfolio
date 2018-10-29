@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/codeSampleTexts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +16,12 @@
     <session id="1741508210">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -31,17 +32,17 @@
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="37821" />
+          <entry key="js" value="38548" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="567" />
+          <entry key="txt" value="597" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -50,7 +51,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="49" />
+          <entry key="JavaScript" value="51" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -64,7 +65,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="1" />
           <entry key="jpg" value="5" />
-          <entry key="js" value="48" />
+          <entry key="js" value="50" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="tmp" value="1" />
@@ -76,8 +77,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="37820" />
-          <entry key="PLAIN_TEXT" value="567" />
+          <entry key="JavaScript" value="38547" />
+          <entry key="PLAIN_TEXT" value="597" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -88,11 +89,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#762#778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="2193">
               <caret line="140" column="76" selection-start-line="140" selection-start-column="76" selection-end-line="140" selection-end-column="76" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -121,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Hobbies/Hobbies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="612">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -133,7 +159,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="214">
               <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
             </state>
           </provider>
@@ -154,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="1190">
               <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
             </state>
           </provider>
@@ -163,10 +189,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="83" />
+            <state relative-caret-position="153">
+              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#63#3855#0" />
+                <element signature="e#67#132#0" />
+                <element signature="e#3888#4233#0" />
+                <element signature="e#4086#4231#0" />
+                <element signature="e#4276#5234#0" />
+                <element signature="e#5268#6575#0" />
+                <element signature="e#6623#7008#0" />
               </folding>
             </state>
           </provider>
@@ -177,8 +209,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="React" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -254,7 +286,6 @@
         <option value="$PROJECT_DIR$/src/BinarySearch/BinarySearch.js" />
         <option value="$PROJECT_DIR$/src/Modal/ModalDisplay.js" />
         <option value="$PROJECT_DIR$/src/Welcome/Welcome.js" />
-        <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
         <option value="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" />
         <option value="$PROJECT_DIR$/src/Contact/Contact.js" />
         <option value="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" />
@@ -265,6 +296,8 @@
         <option value="$PROJECT_DIR$/src/Github/Github.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
+        <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
+        <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
       </list>
     </option>
   </component>
@@ -364,6 +397,12 @@
               <item name="portfolio-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="CodeSamples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Github" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -455,7 +494,8 @@
       <workItem from="1539632153452" duration="707000" />
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
-      <workItem from="1540319393172" duration="11586000" />
+      <workItem from="1540319393172" duration="12236000" />
+      <workItem from="1540840975980" duration="1220000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -555,17 +595,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540433882760</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Put tic-tac-toe on Netlify">
+      <created>1540437754903</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1540437754903</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322033000" />
+    <option name="totallyTimeSpent" value="323903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32249466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32622603" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -579,9 +626,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5161074" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" weight="0.3243243" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" visible="true" weight="0.3243243" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -659,7 +706,8 @@
     <MESSAGE value="added CORS workaround" />
     <MESSAGE value="Fixed some styling." />
     <MESSAGE value="Made tictactoe https" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made tictactoe https" />
+    <MESSAGE value="Put tic-tac-toe on Netlify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put tic-tac-toe on Netlify" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -748,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuBar/MenuBar.js" />
     <entry file="file://$PROJECT_DIR$/src/ExternalWebsite/ExternalWebsite.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -767,9 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,9 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="112" column="80" selection-start-line="112" selection-start-column="80" selection-end-line="112" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,23 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/illuminasia.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -832,26 +850,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/monkey.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Hobbies/Hobbies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="140" column="76" selection-start-line="140" selection-start-column="76" selection-end-line="140" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -859,13 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
+    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="122" column="47" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
         </state>
       </provider>
     </entry>
@@ -876,17 +871,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="140" column="76" selection-start-line="140" selection-start-column="76" selection-end-line="140" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hobbies/Hobbies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="1190">
           <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
+    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
+        <state relative-caret-position="153">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+          <folding>
+            <element signature="e#63#3855#0" />
+            <element signature="e#67#132#0" />
+            <element signature="e#3888#4233#0" />
+            <element signature="e#4086#4231#0" />
+            <element signature="e#4276#5234#0" />
+            <element signature="e#5268#6575#0" />
+            <element signature="e#6623#7008#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#762#778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
