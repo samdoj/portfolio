@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodeCard/CodeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeCard/CodeCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeSampleTexts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeSampleTexts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +38,10 @@
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="38619" />
+          <entry key="js" value="38628" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="788" />
+          <entry key="txt" value="849" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -76,8 +76,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="38618" />
-          <entry key="PLAIN_TEXT" value="788" />
+          <entry key="JavaScript" value="38627" />
+          <entry key="PLAIN_TEXT" value="849" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -97,14 +97,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="160" selection-start-line="8" selection-start-column="160" selection-end-line="8" selection-end-column="160" />
+            <state relative-caret-position="408">
+              <caret line="24" column="502" lean-forward="true" selection-start-line="24" selection-start-column="502" selection-end-line="24" selection-end-column="502" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#762#778#0" expanded="true" />
+                <element signature="e#684#779#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,10 +113,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
+            <state relative-caret-position="340">
+              <caret line="60" column="88" lean-forward="true" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -188,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="107" column="47" lean-forward="true" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+            <state relative-caret-position="442">
+              <caret line="135" column="1" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="135" selection-end-column="1" />
               <folding>
                 <element signature="e#63#3855#0" />
                 <element signature="e#67#132#0" />
@@ -292,9 +292,9 @@
         <option value="$PROJECT_DIR$/src/Github/Github.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
+        <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
         <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
         <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
-        <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
       </list>
     </option>
   </component>
@@ -492,7 +492,7 @@
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
       <workItem from="1540319393172" duration="12236000" />
-      <workItem from="1540840975980" duration="3216000" />
+      <workItem from="1540840975980" duration="3969000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -620,11 +620,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540844162317</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="CodeSampleCards 2.3">
+      <created>1540844635327</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1540844635327</updated>
+    </task>
+    <task id="LOCAL-00020" summary="CodeSamples 2.31">
+      <created>1540845049399</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1540845049399</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325899000" />
+    <option name="totallyTimeSpent" value="326652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -728,7 +742,9 @@
     <MESSAGE value="Made CodeCards display escaped function code instead of using .toSource() to avoid uglification and minification issues." />
     <MESSAGE value="&#10;test" />
     <MESSAGE value="Minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
+    <MESSAGE value="CodeSampleCards 2.3" />
+    <MESSAGE value="CodeSamples 2.31" />
+    <option name="LAST_COMMIT_MESSAGE" value="CodeSamples 2.31" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -929,10 +945,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="60" column="88" lean-forward="true" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="107" column="47" lean-forward="true" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+        <state relative-caret-position="442">
+          <caret line="135" column="1" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="135" selection-end-column="1" />
           <folding>
             <element signature="e#63#3855#0" />
             <element signature="e#67#132#0" />
@@ -945,29 +978,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="160" selection-start-line="8" selection-start-column="160" selection-end-line="8" selection-end-column="160" />
+        <state relative-caret-position="408">
+          <caret line="24" column="502" lean-forward="true" selection-start-line="24" selection-start-column="502" selection-end-line="24" selection-end-column="502" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#762#778#0" expanded="true" />
+            <element signature="e#684#779#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
         </state>
       </provider>
     </entry>
