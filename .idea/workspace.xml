@@ -38,10 +38,10 @@
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="38628" />
+          <entry key="js" value="38641" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="849" />
+          <entry key="txt" value="853" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -76,8 +76,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="38627" />
-          <entry key="PLAIN_TEXT" value="849" />
+          <entry key="JavaScript" value="38640" />
+          <entry key="PLAIN_TEXT" value="853" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="502" lean-forward="true" selection-start-line="24" selection-start-column="502" selection-end-line="24" selection-end-column="502" />
+            <state relative-caret-position="428">
+              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#684#779#0" expanded="true" />
@@ -188,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="135" column="1" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="135" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="116" selection-end-column="1" />
               <folding>
                 <element signature="e#63#3855#0" />
                 <element signature="e#67#132#0" />
@@ -492,7 +492,7 @@
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
       <workItem from="1540319393172" duration="12236000" />
-      <workItem from="1540840975980" duration="3969000" />
+      <workItem from="1540840975980" duration="5480000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -634,17 +634,31 @@
       <option name="project" value="LOCAL" />
       <updated>1540845049399</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="CodeSamples 2.33">
+      <created>1540845364016</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1540845364016</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CodeSamples 2.34">
+      <created>1540845992281</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1540845992281</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326652000" />
+    <option name="totallyTimeSpent" value="328163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32622603" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32622603" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -660,8 +674,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986577" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5161074" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" visible="true" weight="0.3243243" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32885906" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" weight="0.3243243" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -744,7 +758,10 @@
     <MESSAGE value="Minor fixes" />
     <MESSAGE value="CodeSampleCards 2.3" />
     <MESSAGE value="CodeSamples 2.31" />
-    <option name="LAST_COMMIT_MESSAGE" value="CodeSamples 2.31" />
+    <MESSAGE value="CodeSamples 2.32" />
+    <MESSAGE value="CodeSamples 2.33" />
+    <MESSAGE value="CodeSamples 2.34" />
+    <option name="LAST_COMMIT_MESSAGE" value="CodeSamples 2.34" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -845,6 +862,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -852,6 +872,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="112" column="80" selection-start-line="112" selection-start-column="80" selection-end-line="112" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -964,8 +987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="135" column="1" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="135" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="116" selection-end-column="1" />
           <folding>
             <element signature="e#63#3855#0" />
             <element signature="e#67#132#0" />
@@ -978,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="502" lean-forward="true" selection-start-line="24" selection-start-column="502" selection-end-line="24" selection-end-column="502" />
+        <state relative-caret-position="428">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#684#779#0" expanded="true" />
