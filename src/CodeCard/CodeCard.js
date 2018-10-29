@@ -39,8 +39,6 @@ export default class CodeCard extends React.Component{
         const maxWidth = this.state.expanded ? '50vw' : '50%';
         const {title, func, code} = this.props;
 
-        if (code) alert(code)
-
         return( this.state.showModal ? <ModalDisplay func={this.props.noRun ? null : ()=>func.call()} close={()=>this.toggleModal(false)} component={this.props.component ? this.props.component : undefined}/>: <Card className={'code-card'} style={{ maxWidth:'100vw', width, height, left, top, position, zIndex, overflow,}}>
             <CardHeader title={title}/>
             <CardActions style={{maxWidth:'100vw', height:'100px', overflow:'hidden'}}>
