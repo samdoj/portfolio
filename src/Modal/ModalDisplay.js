@@ -29,7 +29,7 @@ export default class ModalDisplay extends React.Component {
             </div>
             </div></div>;
         return (<Modal open={true} onRendered={() => this.props.func ? this.props.func.call() : null}
-                       style={{overflow: 'scroll', alignContent: 'center', alignItems: 'center'}}>
+                       style={{overflow: 'scroll', alignContent: 'center', alignItems: 'center'}} disableAutoFocus={true}>
             <div><Button onClick={() => this.props.close.call()} style={{backgroundColor: 'white'}}>Close</Button>
                 {childComponent}
             </div>
