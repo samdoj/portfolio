@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codeSampleTexts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeSampleTexts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +38,10 @@
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="38729" />
+          <entry key="js" value="38748" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="935" />
+          <entry key="txt" value="965" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -52,7 +50,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="5" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="51" />
+          <entry key="JavaScript" value="52" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -66,7 +64,7 @@
           <entry key="css" value="3" />
           <entry key="html" value="1" />
           <entry key="jpg" value="5" />
-          <entry key="js" value="50" />
+          <entry key="js" value="51" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="tmp" value="1" />
@@ -78,8 +76,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="38728" />
-          <entry key="PLAIN_TEXT" value="935" />
+          <entry key="JavaScript" value="38747" />
+          <entry key="PLAIN_TEXT" value="965" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -95,19 +93,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="95" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#689#784#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+            <state relative-caret-position="323">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -167,25 +152,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.css">
+        <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="527">
+              <caret line="31" column="120" selection-start-line="31" selection-start-column="120" selection-end-line="31" selection-end-column="120" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="191" column="1" selection-start-line="175" selection-start-column="45" selection-end-line="191" selection-end-column="1" />
-              <folding>
-                <element signature="e#63#3855#0" />
-                <element signature="e#67#132#0" />
-                <element signature="e#4086#4231#0" />
-                <element signature="e#5268#6575#0" />
-              </folding>
+            <state relative-caret-position="568">
+              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -272,7 +254,6 @@
         <option value="$PROJECT_DIR$/src/QuickSort/QuickSort.js" />
         <option value="$PROJECT_DIR$/src/codeSampleFunctions.js" />
         <option value="$PROJECT_DIR$/src/BinarySearch/BinarySearch.js" />
-        <option value="$PROJECT_DIR$/src/Modal/ModalDisplay.js" />
         <option value="$PROJECT_DIR$/src/Welcome/Welcome.js" />
         <option value="$PROJECT_DIR$/src/Contact/Contact.js" />
         <option value="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" />
@@ -286,6 +267,7 @@
         <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
         <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
         <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
+        <option value="$PROJECT_DIR$/src/Modal/ModalDisplay.js" />
         <option value="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" />
       </list>
     </option>
@@ -486,7 +468,7 @@
       <workItem from="1540319393172" duration="12236000" />
       <workItem from="1540840975980" duration="7788000" />
       <workItem from="1541437417038" duration="598000" />
-      <workItem from="1542225319171" duration="1496000" />
+      <workItem from="1542225319171" duration="3420000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -663,17 +645,31 @@
       <option name="project" value="LOCAL" />
       <updated>1540849639611</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Removed message about console from mobile phones">
+      <created>1542231980861</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1542231980861</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Disabled autofocus from modal">
+      <created>1542232672926</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1542232672926</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332565000" />
+    <option name="totallyTimeSpent" value="334489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.3336887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.3336887" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -778,7 +774,8 @@
     <MESSAGE value="CodeSamples 2.34" />
     <MESSAGE value="CodeSamples 3.0 fixed formatting" />
     <MESSAGE value="Removed message about console from mobile phones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed message about console from mobile phones" />
+    <MESSAGE value="Disabled autofocus from modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled autofocus from modal" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -918,13 +915,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/monkey.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="116" selection-start-line="7" selection-start-column="116" selection-end-line="7" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -959,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -983,19 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="191" column="1" selection-start-line="175" selection-start-column="45" selection-end-line="191" selection-end-column="1" />
-          <folding>
-            <element signature="e#63#3855#0" />
-            <element signature="e#67#132#0" />
-            <element signature="e#4086#4231#0" />
-            <element signature="e#5268#6575#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="639">
@@ -1007,10 +977,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modal/ModalDisplay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="120" selection-start-line="31" selection-start-column="120" selection-end-line="31" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="191" column="1" selection-start-line="175" selection-start-column="45" selection-end-line="191" selection-end-column="1" />
+          <folding>
+            <element signature="e#63#3855#0" />
+            <element signature="e#67#132#0" />
+            <element signature="e#4086#4231#0" />
+            <element signature="e#5268#6575#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="323">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

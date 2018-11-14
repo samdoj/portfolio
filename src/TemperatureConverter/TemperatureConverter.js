@@ -31,15 +31,13 @@ render ()
             label="Temperature (scale can be included):"
             value={this.state.temp}
             onChange={this.handleChange('temp')}
-            autoFocus={false}
             fullWidth={true}
-            onError={(e)=>alert(e.message)}
+            variant={"outlined"}
             />
         <TextField
     id="form-from"
     label="Convert from:"
     fullWidth={true}
-    autoFocus={false}
     value={this.state.fromScale}
     onChange={this.handleChange('fromScale')}
 
@@ -48,7 +46,6 @@ render ()
     id="form-to"
     label="Convert to: "
     value={this.state.toScale}
-    autoFocus={false}
     fullWidth={true }
     onChange={this.handleChange('toScale')}
             />
