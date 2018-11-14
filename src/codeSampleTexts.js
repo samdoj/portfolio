@@ -69,4 +69,20 @@ export const quickSort ='function quickSort(){\n' +
     '    console.log(\'[\' + quickSortRecursion(data).toString() + \']\');\n' +
     '    console.log(\'Sorted in \' + iterations + \' iterations.\')\n' +
     '}'
-export const binarySearch = 'function binarySearch(arr, target){\\r\\n    target=parseInt(target)\\r\\n    debugger\r\n    let low = 0;\r\n    let high = arr.length - 1;\r\n    let index = 0;\r\n    while (low < high) {\r\n        if(high-1===index) return -1\r\n        index = Math.trunc((low + high) \/ 2);\r\n        if (arr[index] === target) return index;\r\n        if (arr[index] > target) {\r\n            high = index;\r\n        }\r\n        else low = index;\r\n    }\r\n    return -1\r\n}';
+export const binarySearch = '{\n' +
+    '    target=parseInt(target);\n' +
+    '    debugger;\n' +
+    '    let low = 0;\n' +
+    '    let high = arr.length - 1;\n' +
+    '    let index = 0;\n' +
+    '    while (low < high) {\n' +
+    '        if(high-1===index) return -1;\n' +
+    '        index = Math.trunc((low + high) / 2);\n' +
+    '        if (arr[index] === target) return index;\n' +
+    '        if (arr[index] > target) {\n' +
+    '            high = index;\n' +
+    '        }\n' +
+    '        else low = index;\n' +
+    '    }\n' +
+    '    return -1\n' +
+    '}'

@@ -72,7 +72,7 @@ export default class CodeSamples extends React.Component {
                                                               code={codeText.binarySearch}
                                                               title="Binary Search"
                                                               component={() => <BinarySearch/>} noRun={true}/></Grid>
-                    <Grid item sm={6} item lg={4} xl={3}><Card style={{
+                    <Grid sm={6} item lg={4} xl={3}><Card style={{
                         minHeight: '25vh',
                         width: this.state.width < 600 ? '80vw' : null,
                         alignItems: 'center',

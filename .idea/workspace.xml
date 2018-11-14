@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b9a2c13-9438-4576-8331-974d8380e9fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeSampleTexts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeSampleTexts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +17,7 @@
     <session id="1741508210">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -25,25 +25,25 @@
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="912" />
           <entry key="html" value="3" />
-          <entry key="js" value="38690" />
+          <entry key="js" value="38729" />
           <entry key="json" value="43" />
           <entry key="regexp" value="132" />
-          <entry key="txt" value="886" />
+          <entry key="txt" value="935" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -78,8 +78,8 @@
           <entry key="CSS" value="912" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="38689" />
-          <entry key="PLAIN_TEXT" value="886" />
+          <entry key="JavaScript" value="38728" />
+          <entry key="PLAIN_TEXT" value="935" />
           <entry key="RegExp" value="133" />
         </counts>
       </usages-collector>
@@ -102,23 +102,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="639">
+              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#689#784#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,17 +148,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="578">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+            <state relative-caret-position="442">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -190,14 +178,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="173" column="1" selection-start-line="137" selection-start-column="31" selection-end-line="173" selection-end-column="1" />
+            <state relative-caret-position="479">
+              <caret line="191" column="1" selection-start-line="175" selection-start-column="45" selection-end-line="191" selection-end-column="1" />
               <folding>
                 <element signature="e#63#3855#0" />
                 <element signature="e#67#132#0" />
                 <element signature="e#4086#4231#0" />
                 <element signature="e#5268#6575#0" />
-                <element signature="e#6623#7008#0" />
               </folding>
             </state>
           </provider>
@@ -237,6 +224,7 @@
       <find>9</find>
       <find>6</find>
       <find>item</find>
+      <find>TextArea</find>
     </findStrings>
     <replaceStrings>
       <replace>this.state.width *</replace>
@@ -250,6 +238,8 @@
       <replace>8</replace>
       <replace>2</replace>
       <replace>item xs={3}</replace>
+      <replace>TextArea</replace>
+      <replace>textarea</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Jodde\PhpstormProjects\portfolio-react\src\Github</dir>
@@ -284,7 +274,6 @@
         <option value="$PROJECT_DIR$/src/BinarySearch/BinarySearch.js" />
         <option value="$PROJECT_DIR$/src/Modal/ModalDisplay.js" />
         <option value="$PROJECT_DIR$/src/Welcome/Welcome.js" />
-        <option value="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" />
         <option value="$PROJECT_DIR$/src/Contact/Contact.js" />
         <option value="$PROJECT_DIR$/src/DropdownMenu/DropdownMenu.js" />
         <option value="$PROJECT_DIR$/src/TicTacToe.js" />
@@ -295,8 +284,9 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/TicTacToe/TicTacToe.js" />
         <option value="$PROJECT_DIR$/src/CodeCard/CodeCard.js" />
-        <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
         <option value="$PROJECT_DIR$/src/CodeSamples/CodeSamples.js" />
+        <option value="$PROJECT_DIR$/src/codeSampleTexts.js" />
+        <option value="$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js" />
       </list>
     </option>
   </component>
@@ -362,7 +352,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -420,6 +409,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,7 +484,9 @@
       <workItem from="1539987025361" duration="725000" />
       <workItem from="1540317570108" duration="1769000" />
       <workItem from="1540319393172" duration="12236000" />
-      <workItem from="1540840975980" duration="6265000" />
+      <workItem from="1540840975980" duration="7788000" />
+      <workItem from="1541437417038" duration="598000" />
+      <workItem from="1542225319171" duration="1496000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1536439219321</created>
@@ -664,17 +656,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540849131561</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Removed message about console from mobile phones">
+      <created>1540849639611</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1540849639611</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328948000" />
+    <option name="totallyTimeSpent" value="332565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.32622603" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.484" visible="true" weight="0.3336887" />
       <window_info id="Structure" order="1" sideWeight="0.516" side_tool="true" weight="0.3033557" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -688,9 +687,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4986577" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" visible="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48389262" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5161074" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" weight="0.3243243" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.4852349" visible="true" weight="0.3243243" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32848233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -778,7 +777,8 @@
     <MESSAGE value="CodeSamples 2.33" />
     <MESSAGE value="CodeSamples 2.34" />
     <MESSAGE value="CodeSamples 3.0 fixed formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="CodeSamples 3.0 fixed formatting" />
+    <MESSAGE value="Removed message about console from mobile phones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed message about console from mobile phones" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/material-ui/FontIcon/FontIcon.js">
@@ -879,9 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,9 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="112" column="80" selection-start-line="112" selection-start-column="80" selection-end-line="112" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,9 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Github/Github.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
@@ -968,13 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
+    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -985,31 +966,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeCard/CodeCard.js">
+    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="1207">
+          <caret line="89" column="1" selection-start-line="89" selection-end-line="89" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Github/Github.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="173" column="1" selection-start-line="137" selection-start-column="31" selection-end-line="173" selection-end-column="1" />
+        <state relative-caret-position="479">
+          <caret line="191" column="1" selection-start-line="175" selection-start-column="45" selection-end-line="191" selection-end-column="1" />
           <folding>
             <element signature="e#63#3855#0" />
             <element signature="e#67#132#0" />
             <element signature="e#4086#4231#0" />
             <element signature="e#5268#6575#0" />
-            <element signature="e#6623#7008#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codeSampleTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="639">
+          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#689#784#0" expanded="true" />
@@ -1017,12 +1007,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CodeSamples/CodeSamples.js">
+    <entry file="file://$PROJECT_DIR$/src/TemperatureConverter/TemperatureConverter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
