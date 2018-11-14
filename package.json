@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.0.0",
+    "@material-ui/core": "^3.5.1",
     "@polymer/polymer": "^3.0.5",
     "babel-polyfill": "^6.26.0",
     "beautify": "^0.0.8",
