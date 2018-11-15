@@ -36,9 +36,10 @@ export default class Welcome extends React.Component {
                             Coming Soon
                         </Typography>
                         <Typography variant='body2' style={{margin: '2vw'}}>
-                            I'm working hard on this awesome React site to show off my talents.<br/>
-                            Links to my projects are currently working. I'm still working on
-                            deploying the blog, the About Me menu items and Games.  Projects and Code Samples are working.
+                            Thanks for stopping by!  I'm a junior software developer who's passionate about writing<br/>
+                            clean, quality, working code.  I've built this website from scatch and without assistance<br/>
+                            with the exception of StackOverflow when necessary (read rarely).  I'm still working on <br/>
+                            some aspects of it, but it's very near complete.
                         </Typography></div>}</Card>)
     }
 }
