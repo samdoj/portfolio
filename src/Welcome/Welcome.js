@@ -33,7 +33,7 @@ export default class Welcome extends React.Component {
                             variant='display2'
                             align={'center'}
                             style={{color: 'goldenrod', backgroundColor: '#5717FF', margin: '1vw'}}>
-                            Coming Soon
+                            Welcome!
                         </Typography>
                         <Typography variant='body2' style={{margin: '2vw'}}>
                             Thanks for stopping by!  I'm a junior software developer who's passionate about writing<br/>
